@@ -13,18 +13,21 @@ body {
   align-items: center;
   justify-content: center;
   background-color: lightgray;
+  padding: 50px;
 }
 
 .calculator {
   width: 100%;
-  background-color: #ffffff;
+  color: #ffffff;
+  overflow: hidden;
+  border-radius: 15px;
 }
 
 .display{
   padding: 16px;
   text-align: right;
-  background-color: gray;
-  font-size: 1.7rem;
+  background-color: #242B2E;
+  font-size: 2.5rem;
 }
 
 .display span {
@@ -35,9 +38,15 @@ body {
 
 button {
   border: none;
-  font-size: 2rem;
+  font-size: 2.5rem;
   cursor: pointer;
   transition: 0.4s;
+  color: #ffffff;
+  padding: 15px;
+}
+
+button:hover {
+  opacity: 90%;
 }
 
 .operators {
@@ -46,6 +55,11 @@ button {
 
 .operators button {
   flex: 1 1 0%;
+  background-color: #E03B8B;
+}
+
+.operators button:hover {
+  opacity: 70%;
 }
 
 .digits {
@@ -56,4 +70,6 @@ button {
 .digits button {
   flex: 1 1 33.333%;
   max-width: 33.333%;
+  background-color: #242B2E;
+
 }
